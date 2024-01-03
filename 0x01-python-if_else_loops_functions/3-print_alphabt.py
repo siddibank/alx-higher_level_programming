@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-from itertools import chain
-
-for i in chain(range(97, 101), range(102, 113), range(114, 123)):
-    print("{:c}".format(i), end='')
+for letter in range(97, 123):
+    if chr(letter) is not 'q' and chr(letter) is not 'e':
+        print("{}".format(chr(letter)), end="")
